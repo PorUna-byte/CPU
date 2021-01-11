@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/CPU_Pipeline_BranchHazard/lab3/CPUT_isim_beh.exe" -prj "D:/CPU_Pipeline_BranchHazard/lab3/CPUT_beh.prj" "work.CPUT" "work.glbl" 

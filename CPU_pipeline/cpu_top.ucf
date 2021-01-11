@@ -1,0 +1,16 @@
+NET "clk"            	LOC = "V10" | IOSTANDARD = "LVCMOS33";
+NET "reset"          	LOC = "T10" | IOSTANDARD = "LVCMOS33";
+
+NET "segans<0>"         LOC = "T17" | IOSTANDARD = "LVCMOS33";
+NET "segans<1>"         LOC = "T18" | IOSTANDARD = "LVCMOS33";
+NET "segans<2>"         LOC = "U17" | IOSTANDARD = "LVCMOS33";
+NET "segans<3>"         LOC = "U18" | IOSTANDARD = "LVCMOS33";
+NET "segans<4>"         LOC = "M14" | IOSTANDARD = "LVCMOS33";
+NET "segans<5>"         LOC = "N14" | IOSTANDARD = "LVCMOS33";
+NET "segans<6>"         LOC = "L14" | IOSTANDARD = "LVCMOS33";
+NET "segans<7>"         LOC = "M13" | IOSTANDARD = "LVCMOS33";
+
+NET "segan_en<0>"       LOC = "N16" | IOSTANDARD = "LVCMOS33";
+NET "segan_en<1>"       LOC = "N15" | IOSTANDARD = "LVCMOS33";
+NET "segan_en<2>"      	LOC = "P18" | IOSTANDARD = "LVCMOS33";
+NET "segan_en<3>"       LOC = "P17" | IOSTANDARD = "LVCMOS33";

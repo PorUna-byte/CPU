@@ -1,0 +1,522 @@
+Release 14.7 par P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+DESKTOP-SA6T33A::  Sun Jan 03 16:28:41 2021
+
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+
+
+Constraints file: cpu_top.pcf.
+Loading device for application Rf_Device from file '6slx16.nph' in environment D:\Xilinx\14.7\ISE_DS\ISE\.
+   "cpu_top" is an NCD, version 3.2, device xc6slx16, package csg324, speed -3
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.23 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                   866 out of  18,224    4%
+    Number used as Flip Flops:                 832
+    Number used as Latches:                     34
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      2,670 out of   9,112   29%
+    Number used as logic:                    1,220 out of   9,112   13%
+      Number using O6 output only:           1,010
+      Number using O5 output only:              85
+      Number using O5 and O6:                  125
+      Number used as ROM:                        0
+    Number used as Memory:                   1,389 out of   2,176   63%
+      Number used as Dual Port RAM:          1,160
+        Number using O6 output only:         1,160
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Single Port RAM:          132
+        Number using O6 output only:           132
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Shift Register:            97
+        Number using O6 output only:            76
+        Number using O5 output only:             2
+        Number using O5 and O6:                 19
+    Number used exclusively as route-thrus:     61
+      Number with same-slice register load:     52
+      Number with same-slice carry load:         9
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   883 out of   2,278   38%
+  Number of MUXCYs used:                       340 out of   4,556    7%
+  Number of LUT Flip Flop pairs used:        2,988
+    Number with an unused Flip Flop:         2,224 out of   2,988   74%
+    Number with an unused LUT:                 318 out of   2,988   10%
+    Number of fully used LUT-FF pairs:         446 out of   2,988   14%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  18,224    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        14 out of     232    6%
+    Number of LOCed IOBs:                       14 out of      14  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         2 out of      32    6%
+  Number of RAMB8BWERs:                          3 out of      64    4%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       3 out of      16   18%
+    Number used as BUFGs:                        3
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      32    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
+
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB193_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB195_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB198_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB203_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB202_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB214_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB213_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB215_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB212_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB260_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB264_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB257_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB259_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB247_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB245_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB248_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB246_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB232_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB133_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB138_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB131_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB196_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB194_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB200_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB199_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB207_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB208_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB204_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB192_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB201_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB209_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB224_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB222_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB216_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB210_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB265_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB261_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB258_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB272_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB263_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB262_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB249_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB250_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB244_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB254_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB243_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB242_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB241_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB235_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB236_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB237_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB233_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB238_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB229_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB228_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB225_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB227_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB143_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB140_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB142_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB129_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB130_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB4_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB2_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB197_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB206_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB205_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB181_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB190_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB189_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB188_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB219_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB221_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB223_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB217_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB220_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB211_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB267_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB268_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB269_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB270_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB266_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB271_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB256_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB255_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB253_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB165_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB164_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB239_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB240_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB230_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB231_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB226_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB139_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB141_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB144_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB137_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB136_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB135_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB134_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB132_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB11_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB5_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB13_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB3_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB6_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB177_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB178_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB179_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB182_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB191_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB59_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB218_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB251_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB252_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB172_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB176_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB166_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB173_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB163_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB161_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB234_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB157_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB113_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB120_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB122_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB9_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB8_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB7_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB15_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB31_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB16_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB187_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB183_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB184_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB186_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB180_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB55_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB63_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB62_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB284_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB174_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB169_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB168_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB162_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB160_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB159_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB150_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB152_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB148_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB147_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB121_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB128_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB127_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB123_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB119_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB118_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB117_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB114_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB10_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB1_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB12_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB17_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB29_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB28_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB27_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB185_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB33_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB46_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB56_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB54_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB52_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB61_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB86_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB91_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB93_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB94_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB96_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB92_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB83_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB286_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB281_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB280_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB279_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB273_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB171_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB170_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB167_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB156_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB158_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB155_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB149_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB146_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB126_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB125_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB124_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB116_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB14_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB21_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB30_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB32_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB36_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB39_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB40_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB48_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB47_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB49_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB58_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB64_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB60_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB57_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB85_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB95_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB89_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB82_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB90_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB81_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB88_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB87_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB278_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB282_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB274_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB287_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB275_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB111_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB98_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB101_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB175_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB145_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB151_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB153_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB115_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB20_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB26_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB19_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB22_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB35_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB34_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB38_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB42_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB45_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB41_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB51_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB53_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB67_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB79_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB68_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB77_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB80_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB75_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB74_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB73_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB84_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB283_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB288_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB277_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB99_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB110_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB106_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB112_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB103_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB102_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB154_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB23_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB18_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB24_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB25_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB37_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB44_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB43_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB50_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB69_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB66_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB65_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB78_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB76_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB72_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB71_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB70_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB285_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB276_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB109_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB97_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB108_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB105_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB107_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB104_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_cpu/u_BTB/Mram_BTB100_RAMD_O has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 18225 unrouted;      REAL time: 3 secs 
+
+Phase  2  : 16525 unrouted;      REAL time: 4 secs 
+
+Phase  3  : 5006 unrouted;      REAL time: 11 secs 
+
+Phase  4  : 5006 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 secs 
+
+Updating file: cpu_top.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
+Total REAL time to Router completion: 18 secs 
+Total CPU time to Router completion: 17 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP | BUFGMUX_X3Y13| No   |  567 |  0.065     |  0.911      |
++---------------------+--------------+------+------+------------+-------------+
+|U_cpu/ID_EX_Flush_BU |              |      |      |            |             |
+|                  FG |  BUFGMUX_X2Y3| No   |    9 |  0.012     |  0.858      |
++---------------------+--------------+------+------+------------+-------------+
+|    icon_control0<0> |  BUFGMUX_X2Y2| No   |   64 |  0.052     |  0.906      |
++---------------------+--------------+------+------+------------+-------------+
+|U_icon_pro/U0/iUPDAT |              |      |      |            |             |
+|               E_OUT |         Local|      |    1 |  0.000     |  1.248      |
++---------------------+--------------+------+------+------------+-------------+
+|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.481      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 2
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    12.490ns|     2.510ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     0.872ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.121ns|     0.879ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.442ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    22.531ns|     7.469ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.305ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     3.286ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | SETUP       |         N/A|     3.336ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     4.845ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     3.719ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 288 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 19 secs 
+Total CPU time to PAR completion: 18 secs 
+
+Peak Memory Usage:  336 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 290
+Number of info messages: 0
+
+Writing design to file cpu_top.ncd
+
+
+
+PAR done!

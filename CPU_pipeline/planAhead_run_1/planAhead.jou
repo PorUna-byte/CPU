@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Dec 28 17:05:45 2020
+# Process ID: 8428
+# Log file: D:/CPU_Pipeline_DataHazard/lab3/planAhead_run_1/planAhead.log
+# Journal file: D:/CPU_Pipeline_DataHazard/lab3/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/CPU_Pipeline_DataHazard/lab3/pa.fromNetlist.tcl

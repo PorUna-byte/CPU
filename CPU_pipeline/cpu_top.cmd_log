@@ -1,0 +1,306 @@
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.xst" -ofn "D:/TEST/Lab3_PipelineTest/CPU_Pipeline_TestEnvi/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_DataHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_BranchHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_BranchHazard/lab3/cpu_top.syr" 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_BranchHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_BranchHazard/lab3/cpu_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_top.ucf -p xc6slx16-csg324-3 cpu_top_cs.ngc cpu_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_top_map.ncd cpu_top.ngd cpu_top.pcf 
+par -w -intstyle ise -ol high -mt off cpu_top_map.ncd cpu_top.ncd cpu_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf cpu_top.ucf 
+bitgen -intstyle ise -f cpu_top.ut cpu_top.ncd 
+xst -intstyle ise -ifn "D:/CPU_Pipeline_BranchHazard/lab3/cpu_top.xst" -ofn "D:/CPU_Pipeline_BranchHazard/lab3/cpu_top.syr" 

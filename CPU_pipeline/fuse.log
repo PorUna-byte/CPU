@@ -1,0 +1,69 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/CPU_Pipeline_BranchHazard/lab3/CPUT_isim_beh.exe -prj D:/CPU_Pipeline_BranchHazard/lab3/CPUT_beh.prj work.CPUT work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/XOR.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Updater.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Sign_Ext.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/RegFile.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/PC.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Mux_5.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Mux_32.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Mux3_32.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/MEM_WB.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Left_S2_Com.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Left_S2.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Inst_Mem.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/IF_ID.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/ID_EX.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Hazard_detection_unit.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Gshare.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Forwarding_Unit.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/EX_MEM.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Data_Mem.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Control.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Branch_Target_Buffer.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/ALU_Con.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/ALU.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/Adder.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/cpu.v" into library work
+Analyzing Verilog file "D:/CPU_Pipeline_BranchHazard/lab3/CPUT.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 159876 KB
+Fuse CPU Usage: 218 ms
+Compiling module PC
+Compiling module Gshare
+Compiling module Branch_Target_Buffer
+Compiling module Inst_Mem
+Compiling module IF_ID
+Compiling module Hazard_detection_unit
+Compiling module Left_S2_Com
+Compiling module Control
+Compiling module Mux_5
+Compiling module RegFile
+Compiling module Sign_Ext
+Compiling module Left_S2
+Compiling module Adder
+Compiling module Updater
+Compiling module XOR
+Compiling module Mux3_32
+Compiling module ID_EX
+Compiling module Mux_32
+Compiling module ALU
+Compiling module ALU_Con
+Compiling module Forwarding_Unit
+Compiling module EX_MEM
+Compiling module Data_Mem
+Compiling module MEM_WB
+Compiling module cpu
+Compiling module CPUT
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 27 Verilog Units
+Built simulation executable D:/CPU_Pipeline_BranchHazard/lab3/CPUT_isim_beh.exe
+Fuse Memory Usage: 168624 KB
+Fuse CPU Usage: 358 ms
